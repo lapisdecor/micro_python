@@ -2,7 +2,7 @@ local config = import("micro/config")
 local shell = import("micro/shell")
 
 function init()
-    -- true means overwrite any existing binding to CtrlR
+    -- true means overwrite any existing binding to F5
     -- this will modify the bindings.json file
     config.TryBindKey("F5", "lua:initlua.pythonrun", true)
 end
